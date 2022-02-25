@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+    <section class="employee_directory">
+        <h1>Employee Directory</h1>
+        <div > 
+        <form action="#" class="search_form"><!-- Search -->
+            <input type="text" name="employee search" id="searchEmployee">
+            <i class="fas fa-search" id="searchBtn"></i>
+        </form><!-- Search End -->
+
+        <div class="employee_listing"><!-- Listing -->
+
+            {% for staff in employee.all %}
+            <div class="employee"><!-- Employee -->
+                <img src="{{staff.image.url}}" alt="{{staff.first_name}} {{staff.last_name}}">
+                <h2 class="employee_name">{{staff.first_name}} {{staff.last_name}}</h2>
+                <p class="position">{{staff.position}}</p>
+                <p class="job_type">{{staff.employment_type}}</p>
+            </div><!-- Employee End -->
+            {% endfor %}
+
+
+        </div><!-- Listing End -->
+
+
+    </section>
+
+{% endblock content %}

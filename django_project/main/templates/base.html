@@ -1,0 +1,96 @@
+<!-- ./templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Noah Olatoye, InstinctHub">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Employee Directory Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14940b9e28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/directory.css' %}">
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+<header class="" id="headerNav">
+        <div class="navbar"><!-- Header Wrapper -->
+            <div class="logo"><!-- Logo -->
+                <a href="#"><img src="{% static 'img/logo1.svg' %}" alt="" class="logo1"></a>
+                <a href="#"><img src="{% static 'img/logo2.svg' %}" alt="" class="logo2"></a>
+            </div><!-- Logo End -->
+
+            <div class="menu_list"> <!-- Menu List -->
+
+                <a href="#Tutorials" class="primary_link" style="color: #BC658D;">View Tutorials</a>
+                <a href="https://instincthub.com" class="primary_link" target="_blank">instincthub.com</a>
+
+                <div class="drop_list primary_link"><!-- Dropdown -->
+                    <div class="dropdown_link">
+                        <div class="dropdown_btn">Explore</div>
+                        <img src="{% static 'img/expand_less_black_24dp.svg' %}" alt="" class="expand_icon">
+                    </div>
+
+                    <div class="drop_list dropdown_list">
+                        <div class="dropdown_list_item">
+                            <a href="#">What people are saying</a>
+                            <p>How to impact people</p>
+                        </div>
+                        <div class="dropdown_list_item">
+                            <a href="#">Virtual events</a>
+                            <p>How to impact people</p>
+                        </div>
+                    </div>
+                </div><!-- Dropdown End -->
+
+            </div><!-- Menu List End -->
+
+            <div class="signup"><!-- Sign Up -->
+                <a href="#" class="cart">
+                    <img src="{% static 'img/shopping-cart.svg' %}" alt="Shopping Cart Icon">
+                    <span>12</span>
+                </a>
+                <a href="#" class="sign_in">Sign In</a>
+                <img src="{% static 'img/menu-24px.svg' %}" alt="Hamburger Menu" class="hamburger_menu" id="hamburgerMenu">
+            </div><!-- Sign Up End -->
+
+        </div><!-- Header Wrapper End -->
+    </header>
+
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+ <footer id="Tutorials">
+        <h2>Tutorials</h2>
+        <div class="resource_links">
+            <a href="https://youtu.be/66Mmi2rWEKE" target="_blank">HTML </a>
+            <a href="http://github.com/instincthub/employee-directory" target="_blank">Download Source Code </a>
+
+        </div>
+        <h2>About</h2>
+        <p>The employee directory page offer most of the functionality you would need to create a unique a employee listing on your web page. The employee directory is shared by <a href="https://instincthub.com/" target="_blank">InstinctHub</a> Teachers, the learning platform for beginners and professional. Whether you are a beginner or season pro, InstinctHub has design and web development courses you can learn from. <a href="https://skills.instincthub.com/" target="_blank">Start with our free courses.</a></p>
+
+        <div class="footer-icons">
+            <a href="https://twitter.com/instincthub" target="_blank"><img class="footer-icons-image" src="https://skills.instincthub.com/static/icons/twitter.svg" alt="Twitter Icon"></a>
+            <a href="https://facebook.com/instincthub" target="_blank"><img class="footer-icons-image" src="https://skills.instincthub.com/static/icons/facebook.svg" alt="Facebook Icon"></a>
+            <a href="https://linkedin.com/company/instincthub" target="_blank"><img class="footer-icons-image" src="https://skills.instincthub.com/static/icons/linkedin.svg" alt="LinkedIn Icon"></a>
+            <a href="https://instagram.com/instincthub_" target="_blank"><img class="footer-icons-image" src="https://skills.instincthub.com/static/icons/instagram.svg" alt="Instagram Icon"></a>
+            <a href="https://github.com/instincthub" target="_blank"><img class="footer-icons-image" src="https://skills.instincthub.com/static/icons/github.svg" alt="GitHub Icon"></a>
+            <a href="mailto:info@instincthub.com"><img class="footer-icons-image" src="https://skills.instincthub.com/static/icons/envelope.svg" alt="Envelope Icon"></a>
+          </div>
+
+    </footer>
+
+    <script src="{% static 'js/navbar.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

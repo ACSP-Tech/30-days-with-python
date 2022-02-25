@@ -1,0 +1,114 @@
+.employee_directory{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.employee_directory{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-family: 'Nunito', sans-serif;
+}
+.employee_directory h1{
+    text-align: center;
+    font-size: 2em;
+    color: #00808f;
+    margin-bottom: 40px;
+}
+
+form.search_form{
+    position: relative;
+    margin-bottom: 30px;
+}
+form.search_form input{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1em;
+    border: solid 1px #C6C6C6;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: .2s ease-in;
+}
+form.search_form input:focus{
+    border-color: #00808f;
+    outline: none;
+}
+form.search_form i{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: #C6C6C6;
+}
+.employee_listing .employee{
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px rgba(0 0 0 / .1);
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+.employee_listing .employee img{
+    width: 100px;
+    border-radius: 100px;
+}
+.employee_listing .employee h2{
+    font-size: 18px;
+    font-weight: 900;
+    color: #00808f;
+    margin-bottom: 0;
+    line-height: 0;
+}
+.employee_listing .employee .job_type{
+    font-weight: 900;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;  
+}
+.employee_listing .employee:hover,
+.employee_listing .employee:hover h2{
+    color: #fff;
+    background-color: #BC658D;
+    transition: .2s ease-in;
+}
+.employee_listing .employee:hover .job_type{
+    background-color: #BC658D;
+    border: 1px solid #fff;
+}
+
+@media (min-width: 768px){
+    .employee_listing{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .employee_listing .employee{
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+    }
+    form.search_form{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+    }
+}
+@media (min-width: 1366px){
+    .employee_listing .employee{
+        width: 320px;
+    }
+    
+}
+
+

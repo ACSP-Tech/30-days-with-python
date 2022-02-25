@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="shopping_cart-24px" transform="translate(12 12)">
+    <g id="shopping_cart-24px-2" data-name="shopping_cart-24px" transform="translate(-12 -12)" clip-path="url(#clip-path)">
+      <path id="Path_1" data-name="Path 1" d="M15.5,13a2,2,0,0,0,1.8-1l3.6-6.5A1,1,0,0,0,20,4H5.2L4.3,2H1V4H3l3.6,7.6L5.3,14A2,2,0,0,0,7,17H19V15H7l1.1-2ZM6.2,6H18.3l-2.8,5h-7ZM7,18a2,2,0,1,0,2,2,2,2,0,0,0-2-2m10,0a2,2,0,1,0,2,2,2,2,0,0,0-2-2"/>
+    </g>
+  </g>
+</svg>

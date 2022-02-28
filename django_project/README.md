@@ -48,6 +48,33 @@ CRUD operations in a Django application mean performing create, read, update,
     └── base.html
 ```
 
+## Project Setup
+### Create virtual environment 
+`virtualenv .env`
+
+### Activate virtual env (Linux)
+`source .env/bin/activate`
+
+### Activate virtual env (Windows)
+`.env/bin/activate`
+
+### Install Django
+`pip install Django`
+
+### Create Project 
+`django-admin startproject main`
+
+### Start App
+`python manage.py startapp employee`
+
+## Basic Commands 
+
+### Check what folder exist in a current folder (Linux)
+`ls`
+
+### Check what folder exist in a current folder (Windows)
+`dir`
+
 ## Settings
 ```python
 # /settings.py 
